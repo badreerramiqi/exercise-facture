@@ -1,0 +1,37 @@
+                 Algorihme facture
+ variables
+      b , c , d , e , l ,m , p : réel  
+      a , x , y , z : chaine de caractére
+      n : entier
+ Debut
+    pour i<--1 a 3 pas 1 faire
+    |   Ecrire("enter the name of the customer n'",i,":")
+    |   Lire(a)
+    |   Ecrire("enter the number of items : ")
+    |   Lire(n)
+    |   pour j<--1 a n faire
+    |   |  Ecrire("Give the price of the item n'",j,":")
+    |   |  Lire(b)
+    |   |  si i = 1 alors
+    |   |  |   c = b + b * 0.15 - b * 0.02 
+    |   |  |   l<-- l + c
+    |   |  |   x = a
+    |   |  sinon
+    |   |  |  si i = 2 alors
+    |   |  |  |    d = b + b * 0.15 - b * 0.02
+    |   |  |  |    m<-- m + d
+    |   |  |  |    y = a
+    |   |  |  sinon
+    |   |  |  |  si i = 3 alors
+    |   |  |  |  |   e = b + b * 0.15 - b * 0.02
+    |   |  |  |  |   p<-- p + e 
+    |   |  |  |  |   z = a
+    |   |  |  |  Finsi
+    |   |  |  Finsi
+    |   |  Finsi
+    |   Finpour
+    Finpour
+    Ecrire("The Total to be paid for the customer",x,":",l,"DH")
+    Ecrire("The Total to be paid for the customer",y,":",m,"DH")
+    Ecrire("The Total to be paid for the customer",z,":",p,"DH")
+ Fin
